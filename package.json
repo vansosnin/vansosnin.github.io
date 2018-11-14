@@ -1,0 +1,19 @@
+{
+  "name": "vansosnin.github.io",
+  "version": "0.0.1",
+  "description": "Personal blog",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vansosnin/vansosnin.github.io"
+  },
+  "author": "Ivan Sosnin <vansosnin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "metalsmith": "2.3.0",
+    "metalsmith-feed": "1.0.0",
+    "metalsmith-gzip": "1.1.0",
+    "metalsmith-html-minifier": "3.0.0",
+    "metalsmith-markdown": "1.1.0"
+  }
+}
