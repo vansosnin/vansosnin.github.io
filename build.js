@@ -3,6 +3,7 @@ const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
 const datePlugin = require('metalsmith-date-in-filename');
+const formatDate = require('./plugins/formatDate');
 
 Metalsmith(__dirname)
     .metadata({
@@ -20,6 +21,7 @@ Metalsmith(__dirname)
         })
     )
     .use(datePlugin({ override: true }))
+    .use(formatDate())
     .use(markdown())
     .use(
         layouts({
