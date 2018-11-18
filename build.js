@@ -4,6 +4,7 @@ const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
 const discoverPartials = require('metalsmith-discover-partials');
 const datePlugin = require('metalsmith-date-in-filename');
+const htmlMinifier = require('metalsmith-html-minifier');
 const formatDate = require('./plugins/formatDate');
 
 Metalsmith(__dirname)
@@ -36,6 +37,7 @@ Metalsmith(__dirname)
             default: 'post.hbs',
         })
     )
+    .use(htmlMinifier())
     .build((err) => {
         if (err) {
             throw err;
