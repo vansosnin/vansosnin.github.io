@@ -2,6 +2,7 @@ const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
+const discoverPartials = require('metalsmith-discover-partials');
 const datePlugin = require('metalsmith-date-in-filename');
 const formatDate = require('./plugins/formatDate');
 
@@ -23,6 +24,12 @@ Metalsmith(__dirname)
     .use(datePlugin({ override: true }))
     .use(formatDate())
     .use(markdown())
+    .use(
+        discoverPartials({
+            directory: './templates/partials',
+            pattern: /\.hbs$/,
+        })
+    )
     .use(
         layouts({
             directory: './templates',
