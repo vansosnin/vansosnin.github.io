@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "description": "Personal blog",
     "scripts": {
-        "build": "node build.js",
+        "build:static": "parcel build ./static/index.js --out-dir ./public/static",
+        "build": "rimraf ./public && node ./build.js && yarn build:static",
         "deploy": "echo todo"
     },
     "repository": {
@@ -21,8 +22,11 @@
         "metalsmith-discover-partials": "0.1.2",
         "metalsmith-feed": "1.0.0",
         "metalsmith-gzip": "1.1.0",
-        "metalsmith-html-minifier": "3.0.0",
         "metalsmith-layouts": "2.3.0",
-        "metalsmith-markdown": "1.1.0"
+        "metalsmith-markdown": "1.1.0",
+        "metalsmith-permalinks": "2.0.0",
+        "parcel-bundler": "1.10.3",
+        "prismjs": "1.15.0",
+        "rimraf": "2.6.2"
     }
 }
