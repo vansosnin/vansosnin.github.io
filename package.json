@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "Personal blog",
     "scripts": {
+        "comb": "postcss -c postcss.config.js --no-map -r ./static/css/main.css",
         "build:static": "parcel build ./static/index.js --out-dir ./public/static",
         "build": "rimraf ./public && node ./build.js && yarn build:static",
         "deploy": "echo todo"
@@ -28,5 +29,9 @@
         "parcel-bundler": "1.10.3",
         "prismjs": "1.15.0",
         "rimraf": "2.6.2"
+    },
+    "devDependencies": {
+        "postcss-cli": "6.0.1",
+        "postcss-sorting": "4.0.1"
     }
 }
