@@ -1,0 +1,3 @@
+# vansosnin
+
+Static blog
