@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Personal blog",
     "scripts": {
-        "comb": "postcss -c postcss.config.js --no-map -r ./static/css/main.css",
+        "comb": "postcss -c comb.postcss.config.js --no-map -r ./static/css/main.css",
         "build:static": "parcel build ./static/index.js --out-dir ./public/static",
         "build": "rimraf ./public && node ./build.js && yarn build:static",
         "deploy": "echo todo"
