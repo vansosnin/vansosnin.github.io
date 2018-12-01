@@ -6,6 +6,7 @@
         "comb": "postcss -c comb.postcss.config.js --no-map -r ./static/css/main.css",
         "build:static": "parcel build ./static/index.js --out-dir ./public/static",
         "build": "rimraf ./public && node ./build.js && yarn build:static",
+        "watch": "watch 'yarn build' ./static ./templates ./src",
         "deploy": "echo todo"
     },
     "repository": {
@@ -32,6 +33,7 @@
     },
     "devDependencies": {
         "postcss-cli": "6.0.1",
-        "postcss-sorting": "4.0.1"
+        "postcss-sorting": "4.0.1",
+        "watch": "1.0.2"
     }
 }
