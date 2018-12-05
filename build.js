@@ -10,6 +10,7 @@ const formatDate = require('./plugins/formatDate');
 Metalsmith(__dirname)
     .metadata({
         sitename: 'Ivan Sosnin',
+        role: 'Frontend developer',
     })
     .source('./src')
     .destination('./public')
