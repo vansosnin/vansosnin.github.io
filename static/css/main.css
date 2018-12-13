@@ -8,6 +8,8 @@
     --bg-dark-color: rgba(0, 0, 0, 0.1);
     --link-color: #3072c4;
 
+    --border-color: rgba(0, 0, 0, 0.1);
+
     --github-color: #171715;
     --twitter-color: #55acee;
     --rss-color: #f93;
@@ -173,4 +175,70 @@ a.header-home:active .header-title {
 
 .nav-site-item + .nav-site-item {
     margin-left: 1em;
+}
+
+.content {
+    margin: 0 auto;
+    display: block;
+}
+
+.articles-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.articles-list__article {
+    border-top: 1px solid var(--border-color);
+    padding: var(--vgap) 0;
+}
+
+.articles-list__article:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.article-preview {
+    color: inherit;
+    display: block;
+}
+
+.article-preview:hover,
+.article-preview:focus,
+.article-preview:active {
+    text-decoration: none;
+}
+
+.article-preview__title {
+    font-size: 1.6em;
+    margin: 0.6em 0 0.3em;
+    color: var(--link-color);
+}
+
+.article-preview:hover .article-preview__title,
+.article-preview:focus .article-preview__title,
+.article-preview:active .article-preview__title {
+    text-decoration: underline;
+}
+
+.article-preview__date {
+    font-size: 0.9em;
+    margin: 0.3em 0;
+    color: var(--text-secondary-color);
+}
+
+.article-preview__excerpt {
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (min-width: 48em) {
+    .content {
+        max-width: 40em;
+        padding-top: calc(var(--vgap-lg) * 2);
+    }
+
+    .articles-list__article {
+        padding: var(--vgap-lg) 0;
+    }
 }
