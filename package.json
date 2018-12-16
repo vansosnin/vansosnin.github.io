@@ -22,6 +22,7 @@
         "metalsmith-collections": "0.9.0",
         "metalsmith-date-in-filename": "0.0.14",
         "metalsmith-discover-partials": "0.1.2",
+        "metalsmith-excerpts": "1.2.0",
         "metalsmith-feed": "1.0.0",
         "metalsmith-gzip": "1.1.0",
         "metalsmith-layouts": "2.3.0",
@@ -29,7 +30,8 @@
         "metalsmith-permalinks": "2.0.0",
         "parcel-bundler": "1.10.3",
         "prismjs": "1.15.0",
-        "rimraf": "2.6.2"
+        "rimraf": "2.6.2",
+        "striptags": "3.1.1"
     },
     "devDependencies": {
         "postcss-cli": "6.0.1",

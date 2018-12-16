@@ -6,7 +6,9 @@ const discoverPartials = require('metalsmith-discover-partials');
 const datePlugin = require('metalsmith-date-in-filename');
 const permalinks = require('metalsmith-permalinks');
 const feed = require('metalsmith-feed');
+const excerpts = require('metalsmith-excerpts');
 const formatDate = require('./plugins/formatDate');
+const stripExcerptTags = require('./plugins/stripExcerptTags');
 
 Metalsmith(__dirname)
     .metadata({
@@ -34,6 +36,8 @@ Metalsmith(__dirname)
     .use(datePlugin({ override: true }))
     .use(formatDate())
     .use(markdown())
+    .use(excerpts())
+    .use(stripExcerptTags())
     .use(
         permalinks({
             pattern: ':slug',
