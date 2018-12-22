@@ -28,7 +28,7 @@ Metalsmith(__dirname)
         collections({
             posts: {
                 pattern: 'posts/**/*.md',
-                sortBy: (a, b) => b.date.getTime() - a.date.getTime(),
+                sortBy: (a, b) => a.date.getTime() - b.date.getTime(),
                 reverse: true,
             },
         })
