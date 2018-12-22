@@ -23,17 +23,17 @@ Metalsmith(__dirname)
     })
     .source('./src')
     .destination('./public')
+    .use(datePlugin({ override: true }))
     .use(
         collections({
             posts: {
                 pattern: 'posts/**/*.md',
-                sortBy: 'date',
+                sortBy: (a, b) => b.date.getTime() - a.date.getTime(),
                 reverse: true,
             },
         })
     )
     .use(feed({ collection: 'posts', limit: false, destination: 'rss.xml' }))
-    .use(datePlugin({ override: true }))
     .use(formatDate())
     .use(markdown())
     .use(excerpts())

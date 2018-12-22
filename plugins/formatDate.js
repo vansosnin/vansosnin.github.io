@@ -5,7 +5,9 @@ module.exports = () => {
         _.forEach(files, (fileMeta) => {
             if (fileMeta.date instanceof Date) {
                 const { date } = fileMeta;
-                fileMeta.date = `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`;
+                let month = (date.getMonth() + 1).toString();
+                month = month.length === 1 ? `0${month}` : month;
+                fileMeta.date = `${date.getDate()}.${month}.${date.getFullYear()}`;
             }
         });
 
