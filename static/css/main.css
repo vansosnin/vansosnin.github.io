@@ -221,6 +221,18 @@ a.header-home:active .header-title {
     text-decoration: underline;
 }
 
+.article-preview.article-preview--external .article-preview__title:after {
+    content: '';
+    position: relative;
+    top: 0.2em;
+    display: inline-block;
+    margin-left: 0.4em;
+    background-image: url('../img/external-link.svg');
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+}
+
 .article-preview__date {
     font-size: 0.9em;
     margin: 0.3em 0;
