@@ -40,6 +40,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--bg-dark-color);
     padding: var(--vgap-lg) var(--hgap-lg);
 }
@@ -79,15 +80,18 @@ a:active {
 }
 
 .header-home {
-    display: block;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0%;
 }
 
-a.header-home:hover,
-a.header-home:focus,
-a.header-home:active {
+.header-home--link {
+    display: inline-block;
+}
+
+a.header-home--link:hover,
+a.header-home--link:focus,
+a.header-home--link:active {
     text-decoration: none;
 }
 
@@ -98,9 +102,9 @@ a.header-home:active {
     font-size: 1.2em;
 }
 
-a.header-home:hover .header-title,
-a.header-home:focus .header-title,
-a.header-home:active .header-title {
+a.header-home--link:hover .header-title,
+a.header-home--link:focus .header-title,
+a.header-home--link:active .header-title {
     text-decoration: underline;
 }
 
@@ -108,6 +112,7 @@ a.header-home:active .header-title {
     font-size: 0.8em;
     margin: 0.15em 0 0;
     opacity: 0.8;
+    color: var(--text-secondary-color);
 }
 
 .nav-social {
