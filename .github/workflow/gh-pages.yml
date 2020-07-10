@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+      - name: Build
+        run: yarn && yarn build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
