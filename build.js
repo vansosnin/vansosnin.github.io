@@ -14,6 +14,7 @@ Metalsmith(__dirname)
     .metadata({
         sitename: 'Ivan Sosnin',
         role: 'Frontend developer',
+        year: new Date().getFullYear(),
         // for RSS feed
         site: {
             title: 'Ivan Sosnin blog',

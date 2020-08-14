@@ -27,6 +27,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     color: var(--text-color);
     background-color: var(--bg-color);
     font-family: var(--font-family);
@@ -37,12 +39,19 @@ body {
     height: 100%;
 }
 
-header {
+header,
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
     background-color: var(--bg-dark-color);
     padding: var(--vgap-lg) var(--hgap-lg);
+}
+
+article,
+main {
+    flex: 1 0 auto;
 }
 
 h1,
@@ -247,6 +256,11 @@ a.header-home--link:active .header-title {
 .article-preview__excerpt {
     line-height: 1.4;
     margin: 0;
+}
+
+.footer-copyright {
+    font-size: 0.9em;
+    color: var(--text-secondary-color);
 }
 
 @media (min-width: 48em) {
