@@ -6,8 +6,7 @@
         "comb": "postcss -c comb.postcss.config.js --no-map -r ./static/css/main.css",
         "build:static": "parcel build ./static/index.js --out-dir ./public/static",
         "build": "rimraf ./public && node ./build.js && yarn build:static",
-        "watch": "watch 'yarn build' ./static ./templates ./src",
-        "deploy": "echo todo"
+        "watch": "watch 'yarn build' ./static ./templates ./src"
     },
     "repository": {
         "type": "git",
