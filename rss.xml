@@ -4,8 +4,15 @@
         <meta charset="utf-8" />
         <title>Ivan Sosnin</title>
         <link rel='stylesheet' href='/static/index.css'>
-        <link rel="icon" type="image/png" sizes="128x128" href="/static/favicon.png">
-        <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+        <link rel="manifest" href="/static/site.webmanifest">
+        <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="/static/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <svg display=none>
@@ -60,7 +67,7 @@
 <article>
     <h1></h1>
     <div class="meta"></div>
-    <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Sosnin blog]]></title><description><![CDATA[Ivan Sosnin blog]]></description><link>https://vansosnin.github.io/</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 14 Aug 2020 17:20:10 GMT</lastBuildDate><atom:link href="https://vansosnin.github.io/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Ivan Sosnin]]></author><item><title><![CDATA[Ускорение сборки JavaScript-кода с использованием webpack 2–3]]></title><description><![CDATA[Варианты ускорения сборки кода при помощи webpack.]]></description><link>https://habr.com/company/skbkontur/blog/351080/</link><guid isPermaLink="true">https://habr.com/company/skbkontur/blog/351080/</guid><dc:creator><![CDATA[Ivan Sosnin]]></dc:creator><pubDate>Wed, 14 Mar 2018 00:00:00 GMT</pubDate></item></channel></rss>
+    <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ivan Sosnin blog]]></title><description><![CDATA[Ivan Sosnin blog]]></description><link>https://vansosnin.github.io/</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 19 Aug 2020 13:48:16 GMT</lastBuildDate><atom:link href="https://vansosnin.github.io/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Ivan Sosnin]]></author><item><title><![CDATA[Ускорение сборки JavaScript-кода с использованием webpack 2–3]]></title><description><![CDATA[Варианты ускорения сборки кода при помощи webpack.]]></description><link>https://habr.com/company/skbkontur/blog/351080/</link><guid isPermaLink="true">https://habr.com/company/skbkontur/blog/351080/</guid><dc:creator><![CDATA[Ivan Sosnin]]></dc:creator><pubDate>Wed, 14 Mar 2018 00:00:00 GMT</pubDate></item></channel></rss>
 </article>
 
      <footer>
