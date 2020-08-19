@@ -12,7 +12,9 @@
 
     --github-color: #171715;
     --twitter-color: #55acee;
+    --telegram-color: #0088cc;
     --rss-color: #f93;
+    --gmail-color: #d44638;
 
     --vgap: 1.5em;
     --vgap-lg: 1.75em;
@@ -159,6 +161,18 @@ a.header-home--link:active .header-title {
 .nav-social-link.nav-social-link__twitter:focus,
 .nav-social-link.nav-social-link__twitter:active {
     color: var(--twitter-color);
+}
+
+.nav-social-link.nav-social-link__telegram:hover,
+.nav-social-link.nav-social-link__telegram:focus,
+.nav-social-link.nav-social-link__telegram:active {
+    color: var(--telegram-color);
+}
+
+.nav-social-link.nav-social-link__email:hover,
+.nav-social-link.nav-social-link__email:focus,
+.nav-social-link.nav-social-link__email:active {
+    color: var(--gmail-color);
 }
 
 .nav-social-link.nav-social-link__github:hover,
