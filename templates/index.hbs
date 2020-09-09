@@ -4,20 +4,23 @@
     <ul class="articles-list">
         {{#each posts }}
             <li class="articles-list__article">
-                <a
-                    {{#if url}}
-                        href="{{ url }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    {{else}}
-                        href="/{{ path }}"
-                    {{/if}}
-                    class="article-preview{{#if url}} article-preview--external{{/if}}"
-                >
-                    <h2 class="article-preview__title">{{ title }}</h2>
+                <div>
+                    <h2 class="article-preview__title{{#if url}} article-preview--title__external{{/if}}">
+                        <a
+                            {{#if url}}
+                                href="{{ url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            {{else}}
+                                href="/{{ path }}"
+                            {{/if}}
+                        >
+                            {{ title }}
+                        </a>
+                    </h2>
                     <div class="article-preview__date">{{ date }}</div>
                     <p class="article-preview__excerpt">{{ excerpt }}</p>
-                </a>
+                </div>
             </li>
         {{/each}}
     </ul>

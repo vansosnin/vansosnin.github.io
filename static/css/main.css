@@ -226,30 +226,12 @@ a.header-home--link:active .header-title {
     padding-top: 0;
 }
 
-.article-preview {
-    color: inherit;
-    display: block;
-}
-
-.article-preview:hover,
-.article-preview:focus,
-.article-preview:active {
-    text-decoration: none;
-}
-
 .article-preview__title {
     font-size: 1.6em;
     margin: 0.6em 0 0.3em;
-    color: var(--link-color);
 }
 
-.article-preview:hover .article-preview__title,
-.article-preview:focus .article-preview__title,
-.article-preview:active .article-preview__title {
-    text-decoration: underline;
-}
-
-.article-preview.article-preview--external .article-preview__title:after {
+.article-preview__title.article-preview--title__external:after {
     content: '';
     position: relative;
     top: 0.2em;
