@@ -237,6 +237,7 @@ a.header-home--link:active .header-title {
     display: inline-block;
     margin-left: 0.2em;
     background-image: url('../img/external-link.svg');
+    background-repeat: no-repeat;
     width: 0.8em;
     height: 0.8em;
     background-size: contain;
