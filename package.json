@@ -30,7 +30,7 @@
         "metalsmith-permalinks": "2.2.0",
         "parcel-bundler": "1.12.4",
         "parcel-plugin-static-files-copy": "2.5.0",
-        "prismjs": "1.21.0",
+        "prismjs": "1.23.0",
         "rimraf": "3.0.2",
         "striptags": "3.1.1"
     },
